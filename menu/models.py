@@ -19,7 +19,7 @@ class Product(models.Model):
     image_path = models.ImageField(upload_to='img', blank=True)
     price = models.IntegerField()
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
-    category_name = models.CharField(max_length=200, default=str(Category.objects.filter(id=1)))
+#    category_name = models.CharField(max_length=200, default=str(Category.objects.filter(id=1)))
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
