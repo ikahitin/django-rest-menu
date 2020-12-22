@@ -12,7 +12,7 @@ admin.site.register(Category, CategoryAdmin)
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name', 'price', 'created', 'updated', 'category_name']
+    list_display = ['name', 'price', 'created', 'updated']
     list_filter = ['created', 'updated']
     list_editable = ['price']
 
